@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickmark Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="flex2">
+            <h1><u>Quickmark Preview</u></h1>
+            <p><i>Preview Markdown in Real-Time</i></p>
+        </div>
+        </div>
+       
+    <div class="welcome-message ">
+        <h2>Welcome to QuickMark Preview!</h2>
+        <p>Enter your Markdown text in the box below and see the preview instantly.</p>
+    </div>
+    <div class="side-by-side">
+        <h3 class="head">Input</h3>
+        <div class="half" id="markdownInputContainer">
+            <textarea id="markdownInput" placeholder="Enter Markdown Text"></textarea>
+        </div>
+        <h3 class="head">Output</h3>
+        <div class="half" id="markdownPreview"></div>
+    </div>
+    
+    <div class="buttons">
+       
+        <button onclick="clearPreview()">Clear</button>
+        <button onclick="copy()">Copy</button>
+        <button onclick="download()">Download</button>
+        <button onclick="italic()">Italic</button>
+        <button onclick="bold()">Bold</button>
+        <button onclick="header()">Header</button>
+        <button onclick="strikethrough()">Strikethrough</button>
+        <button onclick="code()">Code</button>
+    </div>
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked"></script>
+    <script src="script.js"></script>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/marked/marked.min.js"></script>
+    
+    <script>
+        // Add your Vue.js code here (if any)
+    </script>
+
+
+</body>
+</html>
